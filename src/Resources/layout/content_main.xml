@@ -1,0 +1,174 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nernst potential calculator"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/textTitle"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="www.GitHub.com/SWHarden/NernstApp"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/textSubtitle"
+    />
+
+    <GridLayout
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignBounds"
+        >
+
+
+        <TextView
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internal (mM): "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:minWidth="25px"
+            android:minHeight="25px" />
+
+        <EditText
+            android:id="@+id/editTextInternal"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="123"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="External (mM): "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:minWidth="25px"
+            android:minHeight="25px" />
+
+        <EditText
+            android:id="@+id/editTextExternal"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="123"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charge: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/editTextCharge"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="-1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    </GridLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/buttonChargeCl"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:text="Cl⁻"
+            android:textAllCaps="false"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_width="0dp"
+            android:layout_height="72dp" />
+
+        <Button
+            android:id="@+id/buttonChargeNa"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:text="Na⁺"
+            android:textAllCaps="false"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_width="0dp"
+            android:layout_height="72dp" />
+
+        <Button
+            android:id="@+id/buttonChargeK"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:text="K⁺"
+            android:textAllCaps="false"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_width="0dp"
+            android:layout_height="72dp" />
+
+        <Button
+            android:id="@+id/buttonChargeCa"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:text="Ca⁺⁺"
+            android:textAllCaps="false"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_width="0dp"
+            android:layout_height="72dp" />
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        >
+
+        <TextView
+            android:id="@+id/textEk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123.45 mV"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="40dp"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:textAlignment="center"
+        />
+    </LinearLayout>
+
+</LinearLayout>
