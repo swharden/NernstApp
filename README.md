@@ -11,4 +11,4 @@ NernstApp is an open source project created in Visual Studio Community 2019. Asp
 
 **NernstApp 1.5** is a Xamarin Forms project which supports Android and iPhone. Source code for the GUI ([MainPage.xaml](/src/Xamarin.Forms/NernstApp/MainPage.xaml)) and logic ([MainPage.xaml.cs](/src/Xamarin.Forms/NernstApp/MainPage.xaml.cs)) is easy to review.
 
-**NernstApp 1.4** is a Xamarin native project which only supports Android. Source code for the GUI ([content_main.xml](/src/Xamarin.Native.Android/Resources/layout/content_main.xml) and logic ([MainActivity.cs](/src/Xamarin.Native.Android/MainActivity.cs)) is easy to review.
+**NernstApp 1.4** is a Xamarin native project which only supports Android. Source code for the GUI ([content_main.xml](/src/Xamarin.Native.Android/Resources/layout/content_main.xml)) and logic ([MainActivity.cs](/src/Xamarin.Native.Android/MainActivity.cs)) is easy to review.
