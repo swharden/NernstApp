@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NernstApp.MainPage">
+
+    <StackLayout>
+
+        <Label x:Name="labelTitle"
+            Text="Nernst Potential Calculator" 
+            FontSize="Title"
+            TextColor="Black"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            />
+
+        <Label x:Name="labelSubtitle"
+            Text="www.GitHub.com/SWHarden/NernstApp" 
+            HorizontalOptions="Center"
+            TextColor="Blue"
+            />
+
+        <Grid Padding="10, 20, 20, 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label 
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Internal (mM):" 
+                FontSize="Large"
+                VerticalTextAlignment="Center"
+                TextColor="Black" />
+            <Entry x:Name="entryInternal"
+                Grid.Row="0"
+                Grid.Column="1"
+                Keyboard="Numeric"
+                Text="11" 
+                TextChanged="entryInternal_Completed"
+                />
+
+            <Label 
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="External (mM):" 
+                FontSize="Large"
+                VerticalTextAlignment="Center"
+                TextColor="Black" />
+            <Entry x:Name="entryExternal"
+                Grid.Row="1"
+                Grid.Column="1"
+                Keyboard="Numeric"
+                Text="168" 
+                TextChanged="entryExternal_Completed"
+                />
+
+            <Label 
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="Charge:" 
+                FontSize="Large"
+                VerticalTextAlignment="Center"
+                TextColor="Black" />
+            <Entry x:Name="entryCharge"
+                Grid.Row="2"
+                Grid.Column="1"
+                Keyboard="Numeric"
+                Text="-1" 
+                TextChanged="entryCharge_Completed"
+                />
+
+            <Grid
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                >
+                <Button x:Name="buttonCl"
+                    Grid.Column="0"
+                    Text="Cl⁻" 
+                    FontSize="Large"
+                    BackgroundColor="LightGray" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center"
+                    Padding="10"
+                    Pressed="buttonCl_Pressed"
+                    />
+                <Button x:Name="buttonNa"
+                    Grid.Column="1"
+                    Text="Na⁺" 
+                    FontSize="Large"
+                    BackgroundColor="LightGray"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center"
+                    Padding="10"
+                    Pressed="buttonNa_Pressed"
+                    />
+                <Button x:Name="buttonK"
+                    Grid.Column="2"
+                    Text="K⁺" 
+                    FontSize="Large"
+                    BackgroundColor="LightGray"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center"
+                    Padding="10"
+                    Pressed="buttonK_Pressed"
+                    />
+                <Button x:Name="buttonCa"
+                    Grid.Column="3"
+                    Text="Ca⁺⁺" 
+                    FontSize="Large"
+                    BackgroundColor="LightGray"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center"
+                    Padding="10"
+                    Pressed="buttonCa_Pressed"
+                    />
+            </Grid>
+
+            <Label 
+                Grid.Row="4"
+                Grid.Column="0"
+                Text="Temperature (K):" 
+                FontSize="Large"
+                VerticalTextAlignment="Center"
+                TextColor="Black" />
+            <Entry x:Name="entryTemperatureK"
+                Grid.Row="4"
+                Grid.Column="1"
+                Keyboard="Numeric"
+                Text="300" 
+                TextChanged="entryTemperatureK_Completed"
+                />
+
+            <Label 
+                Grid.Row="5"
+                Grid.Column="0"
+                Text="Temperature (C):" 
+                FontSize="Large"
+                VerticalTextAlignment="Center"
+                TextColor="Gray" />
+            <Label x:Name="labelTemperatureC"
+                Grid.Row="5"
+                Grid.Column="1"
+                FontSize="Large"
+                VerticalTextAlignment="Center"
+                Text="25" 
+                TextColor="Gray" />
+
+            <Label 
+                Grid.Row="6"
+                Grid.Column="0"
+                Text="Temperature (F):" 
+                FontSize="Large"
+                VerticalTextAlignment="Center"
+                TextColor="Gray" />
+            <Label x:Name="labelTemperatureF"
+                Grid.Row="6"
+                Grid.Column="1"
+                FontSize="Large"
+                VerticalTextAlignment="Center"
+                Text="72" 
+                TextColor="Gray" />
+
+        </Grid>
+
+        <Label x:Name="labelNernstPotential"
+            HorizontalOptions="FillAndExpand"
+            FontSize="48"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Text="123.45 mV" 
+            TextColor="Black"
+            FontAttributes="Bold"
+            Padding="0, 20, 0, 20"
+            />
+
+
+    </StackLayout>
+
+</ContentPage>
