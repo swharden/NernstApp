@@ -16,9 +16,9 @@
    id="svg8"
    inkscape:version="0.92.1 r15371"
    sodipodi:docname="nernstAppLogo.svg"
-   inkscape:export-filename="C:\Users\scott\Documents\GitHub\NernstApp\dev\logo\nernstAppLogoSmall.png"
-   inkscape:export-xdpi="24"
-   inkscape:export-ydpi="24">
+   inkscape:export-filename="C:\Users\scott\Documents\GitHub\NernstApp\dev\logo\icon-1024.png"
+   inkscape:export-xdpi="192.00002"
+   inkscape:export-ydpi="192.00002">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="172.53343"
+     inkscape:cx="-65.323713"
      inkscape:cy="330.40482"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -53,7 +53,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
