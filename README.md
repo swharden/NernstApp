@@ -1,6 +1,14 @@
 # NernstApp
 NernstApp is a mobile app which uses the [Nernst equation](https://en.wikipedia.org/wiki/Nernst_equation) to calculate the equilibrium potential (Nernst potential) for an ion based on its charge and concentration on each side of a selectively permiable membrane. This tool can be used to estimate the reversal potential of an ion across the cell membrane of a neuron.
 
+<p align="center">
+<a href="https://play.google.com/store/apps/details?id=swarden.NernstApp">
+<img src="dev/googlePlayLogo.png">
+</a>
+</p>
+
+---
+
 ![](src/Xamarin.Forms/screenshot.jpg)
 
 ![](src/Xamarin.Native.Android/screenshot2.jpg)
